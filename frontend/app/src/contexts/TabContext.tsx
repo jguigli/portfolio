@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
+import type { ReactNode } from 'react';
 
 type TabType = 'profile' | 'projects-professional' | 'projects-personal' | 'projects-academic';
 
@@ -9,7 +10,7 @@ interface TabContextType {
 
 const TabContext = createContext<TabContextType | undefined>(undefined);
 
-export const TabProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const TabProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [activeTab, setActiveTab] = useState<TabType>('projects-professional');
 
   return (

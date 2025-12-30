@@ -8,7 +8,7 @@ interface ProjectFiltersProps {
 }
 
 const ProjectFilters: React.FC<ProjectFiltersProps> = ({ selectedStatus, onStatusChange }) => {
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
 
   const statusTranslations: Record<string, { fr: string; en: string }> = {
     all: { fr: 'Tous', en: 'All' },

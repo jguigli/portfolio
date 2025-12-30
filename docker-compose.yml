@@ -2,7 +2,7 @@ services:
 
   frontend:
     build: ./frontend
-    container_name: site-jo
+    container_name: portfolio
     ports:
       - 5555:5173
     volumes:
