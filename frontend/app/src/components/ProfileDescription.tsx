@@ -12,7 +12,7 @@ const ProfileDescription: React.FC = () => {
         </p>
         <div className="mt-8 flex justify-center md:justify-end">
           <img
-            src="/42_Logo.png"
+            src={`${import.meta.env.BASE_URL}42_Logo.png`}
             alt="42 Logo"
             className="h-12 md:h-16 brightness-0 invert"
           />
