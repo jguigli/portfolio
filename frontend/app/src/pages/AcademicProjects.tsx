@@ -1,13 +1,14 @@
 import TextType from '../components/react_bits/TextType';
-import ProfileDescription from '../components/ProfileDescription';
+import ProjectsGrid from '../components/react_bits/ProjectsCarousel';
+import { academicProjects } from '../data/academic_projects';
 
-export default function Home() {
+export default function AcademicProjects() {
   return (
     <>
       <div className='flex flex-col items-center w-full'>
         {/* Content Section */}
         <div className="w-full max-w-7xl px-4 md:px-6 lg:px-8">
-          <ProfileDescription />
+          <ProjectsGrid projects={academicProjects} />
         </div>
 
         {/* TextType Section */}
@@ -26,3 +27,4 @@ export default function Home() {
     </>
   )
 }
+

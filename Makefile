@@ -1,4 +1,4 @@
-NAME = site-jo
+NAME = portfolio
 DOCKER_COMPOSE_FILE = docker-compose.yml
 DOCKER_COMPOSE = docker compose -f $(DOCKER_COMPOSE_FILE) -p $(NAME)
 
@@ -14,33 +14,8 @@ build_up_d:
 build:
 	$(DOCKER_COMPOSE) build
 
-exec_api:
-	docker exec -it fastapi bash
-
-logs:
-	$(DOCKER_COMPOSE) logs -f api
-
-# Logs of a specific container
-# Usage: make logs_<container_name>
-logs_%:
-	$(DOCKER_COMPOSE) logs $*
-
-# schema:
-# 	$(DOCKER_COMPOSE) exec api alembic upgrade heads
-
-migrate:
-	$(DOCKER_COMPOSE) run --rm migrate
-
-db:
-	$(DOCKER_COMPOSE) exec database psql dev dev
-
 down:
 	$(DOCKER_COMPOSE) down
-
-# Execute a shell in the container
-# Usage: make shell_<container_name>
-shell_%:
-	$(DOCKER_COMPOSE) exec $* sh
 
 clean:
 	$(DOCKER_COMPOSE) down

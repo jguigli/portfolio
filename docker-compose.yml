@@ -5,8 +5,6 @@ services:
     container_name: site-jo
     ports:
       - 5555:5173
-    # expose:
-    #   - "5173"
     volumes:
       - "./frontend/app:/app"
       - "node_modules:/app/node_modules"
