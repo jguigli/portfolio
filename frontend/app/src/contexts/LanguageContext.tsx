@@ -13,7 +13,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 const translations = {
   fr: {
-    'software.engineer': 'Ingénieur Logiciel',
+    'software.engineer': 'Ingénieur Logiciel IA',
     'projects.title': 'Mes Projets',
     'projects.subtitle': 'Découvrez mes réalisations et projets personnels',
     'project.status.in.progress': 'En cours',
@@ -38,7 +38,7 @@ Intéressé par l'IA générative et son intégration dans des produits concrets
 Curieux, rigoureux et autonome, j'interviens sur des projets nécessitant une vision technique globale, une exécution fiable et une collaboration efficace, que ce soit pour développer un produit de bout en bout ou renforcer une équipe existante.`
   },
   en: {
-    'software.engineer': 'Software Engineer',
+    'software.engineer': 'Software Engineer AI',
     'projects.title': 'My Projects',
     'projects.subtitle': 'Discover my achievements and personal projects',
     'project.status.in.progress': 'In Progress',

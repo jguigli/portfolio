@@ -2,35 +2,6 @@ import type { Project } from '../types/project';
 
 export const personnalProjects: Project[] = [
   {
-    title: "Guidely",
-    tagline: {
-      fr: "Application web",
-      en: "Web application"
-    },
-    description: {
-      fr: "Application web de planification d'activités intelligent avec IA et l'API de Google Maps.",
-      en: "Intelligent web application for activity planning with AI and Google Maps API."
-    },
-    image: "./guidely.png",
-    status: "En cours",
-    techStack: ["MapBox", "React", "TypeScript", "Tailwind CSS", "FastAPI", "LangChain", "Celery", "RabbitMQ", "Redis"],
-    features: [
-      {
-        fr: "Authentification JWT",
-        en: "JWT Authentication"
-      },
-      {
-        fr: "Tests unitaires",
-        en: "Unit tests"
-      },
-      {
-        fr: "Rate limiting",
-        en: "Rate limiting"
-      }
-    ],
-    // liveUrl: "https://demo.example.com",
-  },
-  {
     title: "Northrend Conquest",
     tagline: {
       fr: "Serveur World of Warcraft",
